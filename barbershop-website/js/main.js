@@ -457,7 +457,7 @@ document.addEventListener("keydown", (event) => {
     }
 });
 
-// --- APp Start ----
+// --- APP Start ----
 setCurrentYear();
 renderNavigation();
 renderServices();
