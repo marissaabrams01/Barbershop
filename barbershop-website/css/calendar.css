@@ -1,35 +1,35 @@
 .booking-layout {
     margin-top: 32px;
     display: grid;
-    grid-template-columns: 1.1fr 0.pfr;
+    grid-template-columns: 1.1fr 0.9fr;
     gap: 24px;
     align-items: start;
 }
-
-.calender-card,
-.booking-panel { 
-    background-color: rgba(225, 225, 225, 0.1);
-    border:  1px solid rgba(225, 225, 225, 0.18);
+ 
+.calendar-card,
+.booking-panel {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.18);
     border-radius: 18px;
     padding: 20px;
     backdrop-filter: blur(6px);
 }
-
-.calender-header {
+ 
+.calendar-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 12px;
     margin-bottom: 18px;
 }
-
+ 
 .calendar-header h3 {
     font-size: 22px;
     color: var(--color-text-light);
 }
-
-.calender-nav-btn {
-    border: 2px solid rgba(225, 225, 225, 0.35);
+ 
+.calendar-nav-btn {
+    border: 2px solid rgba(255, 255, 255, 0.35);
     background: transparent;
     color: #fff;
     width: 42px;
@@ -40,16 +40,16 @@
     font-weight: 700;
     transition: background-color 0.2s ease, transform 0.1s ease;
 }
-
-.calender-nav-btn:hover {
-    background-color: rgba(225, 225, 225, 0.12);
+ 
+.calendar-nav-btn:hover {
+    background-color: rgba(255, 255, 255, 0.12);
 }
-
-.calender-nav-btn:active {
+ 
+.calendar-nav-btn:active {
     transform: translateY(1px);
 }
-
-.calender-weekdays {
+ 
+.calendar-weekdays {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     gap: 8px;
@@ -57,17 +57,17 @@
     font-weight: 700;
     font-size: 14px;
     text-align: center;
-    color: rgba(225, 225, 225, 0.85);
+    color: rgba(255, 255, 255, 0.85);
 }
-
-.calender-grid {
+ 
+.calendar-grid {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     gap: 8px;
 }
-
-.calender-day,
-.calender-empty {
+ 
+.calendar-day,
+.calendar-empty {
     aspect-ratio: 1 / 1;
     border-radius: 12px;
     display: flex;
@@ -75,69 +75,69 @@
     justify-content: center;
     font-weight: 700;
 }
-
-.calender-empty {
+ 
+.calendar-empty {
     opacity: 0;
 }
-
-.calender-day {
-    border: 1px solid rgba(225, 225, 225, 0.14);
-    background-color: rgba(225, 225, 225, 0.08);
+ 
+.calendar-day {
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    background-color: rgba(255, 255, 255, 0.08);
     color: #fff;
     cursor: pointer;
     transition: background-color 0.2s ease, transform 0.1s ease, border-color 0.2s ease;
 }
-
-.calender-day:hover {
-    background-color: rgba(225, 225, 225, 0.18);
+ 
+.calendar-day:hover {
+    background-color: rgba(255, 255, 255, 0.18);
 }
-
-.calender-day:active {
+ 
+.calendar-day:active {
     transform: translateY(1px);
 }
-
-.calender-day.today {
+ 
+.calendar-day.today {
     border: 2px solid var(--color-beige);
 }
-
-.calender-day.selected {
+ 
+.calendar-day.selected {
     background-color: #fff;
     color: var(--color-bg-dark);
     border-color: #fff;
 }
-
-.calender-day.disabled {
+ 
+.calendar-day.disabled {
     opacity: 0.35;
     cursor: not-allowed;
     pointer-events: none;
 }
-
+ 
 .booking-panel-title {
     font-size: 24px;
     margin-bottom: 10px;
     color: #fff;
 }
-
+ 
 .selected-date-text {
     margin-bottom: 16px;
     font-weight: 700;
-    color: rgba(225, 225, 225, 0.92);
+    color: rgba(255, 255, 255, 0.92);
 }
-
+ 
 #selectedDateText {
     color: var(--color-beige);
 }
-
+ 
 .time-slots {
     display: grid;
-    grid-template-columns: repear(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     margin-bottom: 20px;
 }
-
+ 
 .time-slot-btn {
-    border: 2px solid rgba(225, 225, 225, 0.25);
-    background: rgba(225, 225, 225, 0.08);
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.08);
     color: #fff;
     padding: 10px 12px;
     border-radius: 12px;
@@ -145,32 +145,32 @@
     font-weight: 700;
     transition: background-color 0.2s ease, border-color 0.2s ease;
 }
-
+ 
 .time-slot-btn:hover {
-    background-color: rgba(225, 225, 225, 0.14);
+    background-color: rgba(255, 255, 255, 0.14);
 }
-
+ 
 .time-slot-btn.selected {
     background-color: #fff;
     color: var(--color-bg-dark);
     border-color: #fff;
 }
-
+ 
 .booking-form {
     display: grid;
     gap: 14px;
 }
-
+ 
 .form-group {
     display: grid;
     gap: 8px;
 }
-
+ 
 .form-group label {
     font-weight: 700;
     color: #fff;
 }
-
+ 
 .form-group input,
 .form-group select {
     border: none;
@@ -178,29 +178,30 @@
     padding: 12px 14px;
     font-size: 16px;
 }
-
+ 
 .booking-submit-btn {
     width: 100%;
 }
-
+ 
 .booking-message {
     min-height: 24px;
     font-weight: 700;
     color: #fff;
 }
-
+ 
 .booking-message.error {
     color: #ffe0e0;
 }
-
+ 
 .booking-message.success {
     color: #d6ffd6;
 }
-
+ 
 @media (max-width: 900px) {
     .booking-layout {
         grid-template-columns: 1fr;
-
+    }
+ 
     .time-slots {
         grid-template-columns: repeat(2, 1fr);
     }

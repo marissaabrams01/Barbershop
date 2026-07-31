@@ -7,7 +7,7 @@
 
     <!-- CSS -->
      <link rel="stylesheet" href="css/styles.css" />
-     <link rel="stylesheet" href="css/calender.css" />
+     <link rel="stylesheet" href="css/calendar.css" />
 </head>
 <body>
     <!--  ===== Header / Navbar ==== -->
@@ -37,7 +37,8 @@
 
       <!--  ==== Hero Section ==== -->
         <section class="hero" id="hero">
-            <div class="container hero-inner">
+           <div class="container hero-inner">
+                <div class="hero-text">
                 <h1 id="heroHeading">Classic Cuts. Clean Shaves. Vintage Style.</h1>
                 <p id="heroSubtext">
                     Expirence the tradition of a true barbershop-precision fades,
@@ -136,13 +137,13 @@
             </div>
 
             <div class="container booking-layout">
-                <div class="calender-card">
-                    <button class="calender-nav-btn" id="prevMonthBtn">←</button>
-                    <h3 id="calenderMonthLabel">Month Year</h3>
-                    <button class="calender-nav-btn" id="nextMonthBtn">→</button>
+                <div class="calendar-card">
+                    <button class="calendar-nav-btn" id="prevMonthBtn">←</button>
+                    <h3 id="calendarMonthLabel">Month Year</h3>
+                    <button class="calendar-nav-btn" id="nextMonthBtn">→</button>
                 </div>
 
-                <div class="calender-weekdays">
+                <div class="calendar-weekdays">
                     <span>Sun</span>
                     <span>Mon</span>
                     <span>Tue</span>
@@ -152,7 +153,7 @@
                     <span>Sat</span>
                 </div>
 
-                <div class="calender-grid" id="calenderGrid"></div>
+                <div class="calendar-grid" id="calendarGrid"></div>
             </div>
 
             <div class="booking-panel">
@@ -266,6 +267,6 @@
 
     <!-- JS -->
      <script src="js/main.js"></script>
-     <script src="js/calender.js"></script>
+     <script src="js/calendar.js"></script>
 </body>
 </html>
