@@ -4,8 +4,7 @@
 // =========================
  
 // ----- DOM Elements -----
-const yearEl = document.getElementById("year");
- 
+const yearEl = document.getElementById("year"); 
 const nav = document.getElementById("nav");
 const menuBtn = document.getElementById("menuBtn");
 const mobileMenu = document.getElementById("mobileMenu");
